@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Rizo | Portfolio</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{--primary:#378ADD;--dark:#0a0a0a;--light:#f5f5f5;}
+  body{font-family:'Segoe UI',sans-serif;background:var(--dark);color:#fff;overflow-x:hidden;}
+  nav{position:fixed;top:0;width:100%;padding:1.2rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,10,0.9);backdrop-filter:blur(10px);z-index:100;}
+  .logo{font-size:1.4rem;font-weight:700;color:var(--primary);}
+  nav ul{list-style:none;display:flex;gap:2rem;}
+  nav ul a{color:#ccc;text-decoration:none;transition:.3s;}
+  nav ul a:hover{color:var(--primary);}
+  .hero{min-height:100vh;display:flex;align-items:center;padding:0 5%;background:linear-gradient(135deg,#0a0a0a 60%,#0d1f35);}
+  .hero-content h1{font-size:3.5rem;font-weight:700;line-height:1.2;}
+  .hero-content h1 span{color:var(--primary);}
+  .hero-content p{font-size:1.1rem;color:#aaa;margin:1.5rem 0 2rem;max-width:500px;}
+  .btn{display:inline-block;padding:.9rem 2rem;background:var(--primary);color:#fff;border-radius:8px;text-decoration:none;font-weight:600;transition:.3s;}
+  .btn:hover{background:#185FA5;transform:translateY(-2px);}
+  .btn-outline{background:transparent;border:2px solid var(--primary);color:var(--primary);margin-left:1rem;}
+  .section{padding:5rem 5%;}
+  .section-title{font-size:2rem;font-weight:700;margin-bottom:3rem;text-align:center;}
+  .section-title span{color:var(--primary);}
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;}
+  .skill-card{background:#111;border:1px solid #222;border-radius:12px;padding:1.5rem;text-align:center;transition:.3s;}
+  .skill-card:hover{border-color:var(--primary);transform:translateY(-5px);}
+  .skill-card .icon{font-size:2.5rem;margin-bottom:.8rem;}
+  .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
+  .project-card{background:#111;border:1px solid #222;border-radius:12px;overflow:hidden;transition:.3s;}
+  .project-card:hover{border-color:var(--primary);transform:translateY(-5px);}
+  .project-img{height:180px;display:flex;align-items:center;justify-content:center;font-size:4rem;}
+  .project-body{padding:1.5rem;}
+  .project-body h3{font-size:1.1rem;margin-bottom:.5rem;}
+  .project-body p{color:#888;font-size:.9rem;}
+  .contact{background:#0d1f35;border-radius:16px;padding:3rem;text-align:center;}
+  .contact h2{font-size:2rem;margin-bottom:1rem;}
+  .contact p{color:#aaa;margin-bottom:2rem;}
+  footer{text-align:center;padding:2rem;color:#555;border-top:1px solid #222;}
+  .tag{display:inline-block;background:#1a2a3a;color:var(--primary);padding:.2rem .7rem;border-radius:20px;font-size:.8rem;margin:.2rem;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+  .hero-content{animation:fadeIn .8s ease}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">MR.</div>
+  <ul>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-content">
+    <p style="color:var(--primary);font-weight:600;margin-bottom:.5rem;">👋 Salom, men</p>
+    <h1>Muhammad <span>Rizo</span></h1>
+    <h1 style="color:#aaa;font-size:2rem;font-weight:400;">Frontend Designer</h1>
+    <p>Chiroyli va zamonaviy web interfeyslar yaratuvchi dizayner. HTML, CSS va JavaScript bilan professional saytlar quraman.</p>
+    <a href="#projects" class="btn">Loyihalarni ko'rish</a>
+    <a href="#contact" class="btn btn-outline">Bog'lanish</a>
+  </div>
+</section>
+<section class="section" id="skills">
+  <h2 class="section-title">Mening <span>Skilllarim</span></h2>
+  <div class="skills-grid">
+    <div class="skill-card"><div class="icon">🌐</div><h3>HTML5</h3></div>
+    <div class="skill-card"><div class="icon">🎨</div><h3>CSS3</h3></div>
+    <div class="skill-card"><div class="icon">⚡</div><h3>JavaScript</h3></div>
+    <div class="skill-card"><div class="icon">🖌️</div><h3>Figma</h3></div>
+    <div class="skill-card"><div class="icon">📱</div><h3>Responsive</h3></div>
+    <div class="skill-card"><div class="icon">🔧</div><h3>Git</h3></div>
+  </div>
+</section>
+<section class="section" id="projects">
+  <h2 class="section-title">Mening <span>Loyihalarim</span></h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-img" style="background:#0d1f35;">⚽</div>
+      <div class="project-body">
+        <h3>Futbol Yangiliklar</h3>
+        <p>Futbol yangiliklari va statistika sayt</p>
+        <div style="margin-top:.8rem"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img" style="background:#1a0d35;">🚀</div>
+      <div class="project-body">
+        <h3>Landing Page</h3>
+        <p>Zamonaviy mahsulot landing page</p>
+        <div style="margin-top:.8rem"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img" style="background:#0d3520;">📊</div>
+      <div class="project-body">
+        <h3>Dashboard UI</h3>
+        <p>Admin panel va statistika dashboard</p>
+        <div style="margin-top:.8rem"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="contact">
+    <h2>Bog'lanish 📬</h2>
+    <p>Loyiha yoki hamkorlik uchun menga yozing!</p>
+    <a href="https://github.com/muhammadrizo-deV1" class="btn">GitHub'da ko'rish</a>
+  </div>
+</section>
+<footer>Made with ❤️ by Muhammad Rizo</footer>
+</body>
+</html>
